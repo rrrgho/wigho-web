@@ -1,17 +1,17 @@
 import React from 'react';
+import ImageTelkomsel from '../../assets/images/Telkomsel.png'
+import ImageAstra from '../../assets/images/Astra.png'
+import ImageMBI from '../../assets/images/MBI.png'
 
 const BrandList = [
     {
-        image: './images/brand/Telkomsel.png'
+        image: ImageTelkomsel
     },
     {
-        image: './images/brand/Astra.png'
+        image: ImageAstra
     },
     {
-        image: './images/brand/brand-04.png'
-    },
-    {
-        image: './images/brand/MBI.png'
+        image: ImageMBI
     },
 
 ]

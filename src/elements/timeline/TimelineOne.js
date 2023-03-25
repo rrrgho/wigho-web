@@ -1,5 +1,7 @@
 import React from 'react';
 import ScrollAnimation from "react-animate-on-scroll";
+import ImageAgile from '../../assets/images/Agile.png'
+import ImageUpdatedTech from '../../assets/images/Updated Tech.png'
 
 const TimelineData = [
     {
@@ -7,7 +9,7 @@ const TimelineData = [
         date: "Step-1",
         title: "We Work in Agility.",
         description: "Agile methodology is a flexible and iterative approach to project management and software development that prioritizes collaboration, continuous improvement, and customer satisfaction. It emphasizes working in short cycles, called sprints, to quickly deliver small increments of working software and gather feedback from stakeholders. This approach allows teams to respond to changes and adapt to evolving requirements quickly.",
-        image: "agile.png",
+        image: ImageAgile,
         workingStep: [
             {
                 stepTitle: "Gain your works",
@@ -24,7 +26,7 @@ const TimelineData = [
         date: "Step-2",
         title: "Use the Newest Technology",
         description: "At Wigho Digital, we are committed to staying at the forefront of technology. We use the latest and most advanced tools and technologies to provide our clients with innovative solutions and exceptional service.",
-        image: "updated.png",
+        image: ImageUpdatedTech,
         workingStep: [
             {
                 stepTitle: "Follow this process",
@@ -108,7 +110,7 @@ const TimelineOne = () => {
                                 </div>
                                 <div className="order-1 order-lg-2 col-lg-6">
                                     <div className="thumbnail">
-                                        <img className="w-100" src={`./images/timeline/${data.image}`} alt="Corporate React Template" />
+                                        <img className="w-100" src={data.image} alt="Corporate React Template" />
                                     </div>
                                 </div>
                             </div>
