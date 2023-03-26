@@ -52,10 +52,10 @@ const FooterTwo = () => {
                                     <div className="inner">
                                         <h6 className="subtitle">{footerIntemFive.subtitle}</h6>
                                         <ul className="social-icon social-default justify-content-start">
-                                            <li><a target="_blank" href="https://www.instagram.com/wighodigital/"><FiFacebook /></a></li>
-                                            <li><a target="_blank" href="https://www.instagram.com/wighodigital/"><FiTwitter /></a></li>
+                                            {/*<li><a target="_blank" href="https://www.instagram.com/wighodigital/"><FiFacebook /></a></li>*/}
+                                            {/*<li><a target="_blank" href="https://www.instagram.com/wighodigital/"><FiTwitter /></a></li>*/}
                                             <li><a target="_blank" href="https://www.instagram.com/wighodigital/"><FiInstagram /></a></li>
-                                            <li><a target="_blank" href="https://www.instagram.com/wighodigital/"><FiLinkedin /></a></li>
+                                            <li><a target="_blank" href="https://www.linkedin.com/company/wigho-digital/"><FiLinkedin /></a></li>
                                         </ul>
                                     </div>
                                 </div>
