@@ -1,5 +1,6 @@
 import React from 'react';
 import { FiCheck } from "react-icons/fi";
+import {Link} from "react-router-dom";
 
 const PricingTwo = () => {
     return (
@@ -30,7 +31,7 @@ const PricingTwo = () => {
                             </ul>
                         </div>
                         <div className="pricing-footer">
-                            <a className="btn-default btn-border" href="#pricing">Purchase Now</a>
+                            <Link className="btn-default btn-border" to="/consult">Get Your Deal</Link>
                         </div>
                     </div>
                 </div>
@@ -62,7 +63,7 @@ const PricingTwo = () => {
                             </ul>
                         </div>
                         <div className="pricing-footer">
-                            <a className="btn-default" href="#">Purchase Now</a>
+                            <Link className="btn-default" to="/consult">Get Your Deal</Link>
                         </div>
                     </div>
                 </div>
@@ -97,7 +98,7 @@ const PricingTwo = () => {
                             </ul>
                         </div>
                         <div className="pricing-footer">
-                            <a className="btn-default btn-border" href="#pricing">Purchase Now</a>
+                            <Link className="btn-default btn-border" to="/consult">Get Your Deal</Link>
                         </div>
                     </div>
                 </div>

@@ -15,7 +15,7 @@ const Consult = () => {
         <>
             <SEO title="Consult | Wigho Digital Solutions"/>
             <main className="page-wrapper">
-                <HeaderOne btnStyle="btn-small btn-icon round" HeaderSTyle="" />
+                <HeaderOne btnStyle="btn-small btn-icon round" HeaderSTyle="header-transparent" />
 
                 {/* Start Slider Area  */}
                 <div className="slider-area slider-style-1 bg-transparent variation-2 height-750">
@@ -23,12 +23,12 @@ const Consult = () => {
                         <div className="row">
                             <div className="col-lg-8 order-2 order-lg-1 mt_md--40 mt_sm--40">
                                 <div className="inner text-start">
-                                    <h1 className="title theme-gradient display-two">Having questions? {" "} <br/>
+                                    <h1 className="title theme-gradient display-one">Having questions? {" "} <br/>
                                         <Typed
                                             strings={[
                                                 "Contact Us.",
                                                 "Discuss.",
-                                                "Make Your Deal.",
+                                                "Get Your Deal.",
                                             ]}
                                             typeSpeed={80}
                                             backSpeed={5}
@@ -53,34 +53,37 @@ const Consult = () => {
                 </div>
                 {/* End Slider Area  */}
 
-                {/* Start FAQ Area */}
-                <div className="rn-company-mission-are rn-section-gap">
-                    <div className="container">
-                        <div className="row row--30">
-                            <div className="col-lg-6">
-                                <div className="mission-title">
-                                    <h2 className="title">Frequently Ask Question <br /> {" "}
-                                    </h2>
-                                    <p>
-                                        Our mission is to empower your business to succeed in the digital age. We are dedicated to helping you grow your business and thrive in today's digital landscape.
-                                    </p>
+                <div className="p-3 p-md-0">
 
-                                    <p>
-                                        As a digital-first company, we are committed to helping businesses like yours thrive in the digital world. Helping you achieve your business goals by providing innovative solutions and expert guidance.
-                                    </p>
+                    {/* Start FAQ Area */}
+                    <div className="rn-company-mission-are rn-section-gap">
+                        <div className="container">
+                            <div className="row row--30">
+                                <div className="col-lg-6">
+                                    <div className="mission-title">
+                                        <h2 className="title">Frequently Ask Question <br /> {" "}
+                                        </h2>
+                                        <p>
+                                            Our mission is to empower your business to succeed in the digital age. We are dedicated to helping you grow your business and thrive in today's digital landscape.
+                                        </p>
 
-                                    <div className="read-more-btn mt--50">
-                                        <Link className="btn-default btn-icon" to="#">More FAQs <i className="icon"><FiArrowRight /></i></Link>
+                                        <p>
+                                            As a digital-first company, we are committed to helping businesses like yours thrive in the digital world. Helping you achieve your business goals by providing innovative solutions and expert guidance.
+                                        </p>
+
+                                        <div className="read-more-btn mt--50">
+                                            <Link className="btn-default btn-icon" to="#">More FAQs <i className="icon"><FiArrowRight /></i></Link>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="col-lg-6 mt_md--30 mt_sm--30">
-                                <AccordionTwo customStyle="" />
+                                <div className="col-lg-6 mt_md--30 mt_sm--30">
+                                    <AccordionTwo customStyle="" />
+                                </div>
                             </div>
                         </div>
                     </div>
+                    {/* End FAQ Area */}
                 </div>
-                {/* End FAQ Area */}
 
                 <FooterTwo />
             </main>

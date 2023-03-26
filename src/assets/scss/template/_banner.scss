@@ -1,7 +1,7 @@
 /*------------------------
-    Banner Styles  
+    Banner Styles
 -------------------------*/
-// Slider Dot 
+// Slider Dot
 .slider-dot {
     &.rn-slick-dot {
         .slick-dots {
@@ -196,7 +196,7 @@
 }
 
 /*-----------------------
-    Slider Style One  
+    Slider Style One
 -------------------------*/
 
 .slider-style-1 {
@@ -298,7 +298,7 @@
 
 }
 
-// Slider Style Two 
+// Slider Style Two
 
 .slider-style-2 {
     padding-top: 130px;
@@ -430,7 +430,7 @@
     }
 }
 
-// Slider Style Three 
+// Slider Style Three
 
 .slider-style-3 {
     @media #{$md-layout} {
@@ -502,7 +502,7 @@
 }
 
 
-// Slider Style 4 
+// Slider Style 4
 .slider-style-4 {
     .inner {
         padding-top: 80px;
@@ -699,11 +699,11 @@
             display: block;
             font-size: 80px;
             line-height: 1.1;
-            
+
             @media #{$lg-layout} {
                 font-size: 62px;
             }
-            
+
             @media #{$md-layout} {
                 font-size: 60px;
             }
@@ -802,7 +802,7 @@
                 font-size: 32px;
             }
         }
-        
+
     }
 }
 
@@ -842,7 +842,7 @@
         }
     }
 }
-// Slider Animation 
+// Slider Animation
 .slider-style-4 {
     .slick-active {
         .inner {

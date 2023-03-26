@@ -34,7 +34,7 @@ const Home = () => {
         <>
             <SEO title="Wigho Digital Solutions" />
             <main className="page-wrapper">
-                <HeaderOne btnStyle="btn-small btn-icon round" HeaderSTyle="" />
+                <HeaderOne btnStyle="btn-small btn-icon round" HeaderSTyle="header-transparent" />
 
                 {/* Start Slider Area  */}
                 <Slider className="slider-area slider-style-4 variation-2 slider-dot rn-slick-dot rn-slick-arrow" {...BannerActivation}>
@@ -48,7 +48,7 @@ const Home = () => {
                                                 <h1 className="title" dangerouslySetInnerHTML={{__html: data.title}}></h1>
                                                 <p className="description" dangerouslySetInnerHTML={{__html: data.description}}></p>
                                                 <div className="button-group mt--30">
-                                                    <a className="btn-default btn-large round" target="_blank" href="https://themeforest.net/checkout/from_item/33571911?license=regular">Get started now</a>
+                                                    <Link className="btn-default btn-large round" to="/consult">Get started now</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -61,185 +61,176 @@ const Home = () => {
                 {/* End Slider Area  */}
 
 
-                {/* Start About Area  */}
-                <div className="slider-area slider-style-1 bg-transparent height-850">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <div className="inner text-center">
-                                    <span className="subtitle">DIGITAL CONSULTING AGENCY</span>
-                                    <h1 className="title theme-gradient display-two">One Stop IT Solution <br /> {" "}
-                                        <Typed
-                                            strings={[
-                                                "Consulting.",
-                                                "Software Development.",
-                                                "Resource Outsourcing.",
-                                                "IT Training.",
-                                            ]}
-                                            typeSpeed={80}
-                                            backSpeed={5}
-                                            backDelay={1000}
-                                            loop
-                                        />
-                                    </h1>
-                                    <p className="description">We specialize in providing innovative and customized solutions to businesses seeking to leverage technology to achieve their strategic goals.</p>
-                                    <div className="button-group">
-                                        <a className="btn-default btn-medium round btn-icon" target="_blank" href="https://themeforest.net/checkout/from_item/33571911?license=regular">Book Appointment <i className="icon"><FiArrowRight /></i></a>
-                                        <Link className="btn-default btn-medium btn-border round btn-icon" to="#">Contact Us <i className="icon"><FiArrowRight /></i></Link>
+                <div className="p-3 p-md-0">
+                    {/* Start About Area  */}
+                    <div className="slider-area slider-style-1 bg-transparent height-850">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-12">
+                                    <div className="inner text-center">
+                                        <span className="subtitle">DIGITAL CONSULTING AGENCY</span>
+                                        <h1 className="title theme-gradient display-two d-none d-md-block">One Stop IT Solution <br /> {" "}
+                                            <Typed
+                                                strings={[
+                                                    "Consulting.",
+                                                    "Software Development.",
+                                                    "Resource Outsourcing.",
+                                                    "IT Training.",
+                                                ]}
+                                                typeSpeed={80}
+                                                backSpeed={5}
+                                                backDelay={1000}
+                                                loop
+                                            />
+                                        </h1>
+                                        <h2 className="title theme-gradient d-block d-md-none">One Stop IT Solution <br /> {" "}
+                                            <Typed
+                                                strings={[
+                                                    "Consulting.",
+                                                    "Software Development.",
+                                                    "Resource Outsourcing.",
+                                                    "IT Training.",
+                                                ]}
+                                                typeSpeed={80}
+                                                backSpeed={5}
+                                                backDelay={1000}
+                                                loop
+                                            />
+                                        </h2>
+                                        <p className="description">We specialize in providing innovative and customized solutions to businesses seeking to leverage technology to achieve their strategic goals.</p>
+                                        <div className="button-group">
+                                            <Link className="btn-default btn-medium round btn-icon" to="/consult">Schedule an Appointment <i className="icon"><FiArrowRight /></i></Link>
+                                            {/*<Link className="btn-default btn-medium btn-border round btn-icon" to="#">Contact Us <i className="icon"><FiArrowRight /></i></Link>*/}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                {/* End About Area  */}
+                    {/* End About Area  */}
 
 
-                <Separator />
-                {/* Start Service Area  */}
-                <div className="rn-service-area rn-section-gap" id="service">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <SectionTitle
-                                    textAlign = "text-center"
-                                    radiusRounded = ""
-                                    subtitle = "What we can do for you"
-                                    title = "Services provide for you."
-                                    description = ""
-                                />
+                    <Separator />
+                    {/* Start Service Area  */}
+                    <div className="rn-service-area rn-section-gap" id="service">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-12">
+                                    <SectionTitle
+                                        textAlign = "text-center"
+                                        radiusRounded = ""
+                                        subtitle = "What we can do for you"
+                                        title = "Services provide for you."
+                                        description = ""
+                                    />
+                                </div>
                             </div>
-                        </div>
-                        <ServiceFour
-                            serviceStyle = "service__style--1 icon-circle-style with-working-process"
-                            textAlign = "text-center"
-                        />
-                    </div>
-                </div>
-                {/* End Service Area  */}
-
-
-                <Separator />
-                <div className="rwt-timeline-area rn-section-gap">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <SectionTitle
-                                    textAlign = "text-center"
-                                    radiusRounded = ""
-                                    subtitle = "Working Process"
-                                    title = "Our Working Procedure"
-                                />
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-lg-10 offset-lg-1 mt--50">
-                                <TimelineOne classVar="no-gradient"  />
-                            </div>
+                            <ServiceFour
+                                serviceStyle = "service__style--1 icon-circle-style with-working-process"
+                                textAlign = "text-center"
+                            />
                         </div>
                     </div>
-                </div>
+                    {/* End Service Area  */}
 
 
-
-
-                {/* Start Project Area */}
-                <Separator />
-                <div className="rwt-brand-area rn-section-gap">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <SectionTitle
-                                    textAlign = "text-center"
-                                    radiusRounded = ""
-                                    subtitle = "Our Awesome Project"
-                                    title = "Our Awesome Project."
-                                    description = ""
-                                />
+                    <Separator />
+                    <div className="rwt-timeline-area rn-section-gap">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-12">
+                                    <SectionTitle
+                                        textAlign = "text-center"
+                                        radiusRounded = ""
+                                        subtitle = "Working Process"
+                                        title = "Our Working Procedure"
+                                    />
+                                </div>
                             </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-lg-12 mt--40">
-                                <BrandOne brandStyle="brand-style-1" />
+                            <div className="row">
+                                <div className="col-lg-10 offset-lg-1 mt--50">
+                                    <TimelineOne classVar="no-gradient"  />
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                {/* End Project Area */}
 
-                {/* Start Company Client Area */}
-                <Separator />
-                <div className="rwt-brand-area rn-section-gap">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <SectionTitle
-                                    textAlign = "text-center"
-                                    radiusRounded = ""
-                                    subtitle = "Our Reliable Programmers Joining Big Tech Company"
-                                    title = "Where Our Team Member Work For"
-                                    description = ""
-                                />
+
+
+
+                    {/* Start Project Area */}
+                    <Separator />
+                    <div className="rwt-brand-area rn-section-gap">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-12">
+                                    <SectionTitle
+                                        textAlign = "text-center"
+                                        radiusRounded = ""
+                                        subtitle = "Our Awesome Project"
+                                        title = "Our Awesome Project."
+                                        description = ""
+                                    />
+                                </div>
                             </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-lg-12 mt--40">
-                                <BrandThree brandStyle="brand-style-1" />
+                            <div className="row">
+                                <div className="col-lg-12 mt--40">
+                                    <BrandOne brandStyle="brand-style-1" />
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                {/* End Company Client Area */}
+                    {/* End Project Area */}
 
-
-
-                {/* Mission */}
-                <Mission />
-
-
-                {/* TEAM SECTION */}
-                {/*<Separator />*/}
-                {/*<div className="rwt-team-area rn-section-gap">*/}
-                {/*    <div className="container">*/}
-                {/*        <div className="row">*/}
-                {/*            <div className="col-lg-12 mb--15">*/}
-                {/*                <SectionTitle*/}
-                {/*                    textAlign = "text-center"*/}
-                {/*                    radiusRounded = ""*/}
-                {/*                    subtitle = "PT WIGHO DIGITAL SOLUTIONS."*/}
-                {/*                    title = "Our Amazing Team."*/}
-                {/*                    description = ""*/}
-                {/*                />*/}
-                {/*            </div>*/}
-                {/*        </div>*/}
-                {/*        <TeamTwo data={headTeam} column="col-lg-3 col-md-6 col-12 mt--30 p-3 p-lg-5" teamStyle="team-style-two" />*/}
-                {/*        <TeamTwo data={developerTeam}  column="col-lg-3 col-md-6 col-12 p-3 p-lg-5" teamStyle="team-style-two" />*/}
-                {/*    </div>*/}
-                {/*</div>*/}
-                {/* END TEAM SECTION */}
-
-
-
-
-                <Separator />
-                {/* Start Elements Area  */}
-                <div className="rwt-pricing-area rn-section-gap" id="pricing">
-                    <div className="container">
-                        <div className="row mb--35">
-                            <div className="col-lg-12">
-                                <SectionTitle
-                                    textAlign = "text-center"
-                                    radiusRounded = ""
-                                    subtitle = "Toppings For Your Coffee"
-                                    title = "Stunning Website Package"
-                                    description = ""
-                                />
+                    {/* Start Company Client Area */}
+                    <Separator />
+                    <div className="rwt-brand-area rn-section-gap">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-12">
+                                    <SectionTitle
+                                        textAlign = "text-center"
+                                        radiusRounded = ""
+                                        subtitle = "Our Reliable Programmers Joining Big Tech Company"
+                                        title = "Where Our Team Member Work For"
+                                        description = ""
+                                    />
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col-lg-12 mt--40">
+                                    <BrandThree brandStyle="brand-style-1" />
+                                </div>
                             </div>
                         </div>
-                        <PricingTwo />
                     </div>
+                    {/* End Company Client Area */}
+
+
+
+                    {/* Mission */}
+                    <Mission />
+
+                    <Separator />
+                    {/* Start Elements Area  */}
+                    <div className="rwt-pricing-area rn-section-gap" id="pricing">
+                        <div className="container">
+                            <div className="row mb--35">
+                                <div className="col-lg-12">
+                                    <SectionTitle
+                                        textAlign = "text-center"
+                                        radiusRounded = ""
+                                        subtitle = "Toppings For Your Coffee"
+                                        title = "Stunning Website Package"
+                                        description = ""
+                                    />
+                                </div>
+                            </div>
+                            <PricingTwo />
+                        </div>
+                    </div>
+                    {/* End Elements Area  */}
                 </div>
-                {/* End Elements Area  */}
 
                 <FooterTwo />
             </main>

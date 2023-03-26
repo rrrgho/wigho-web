@@ -33,7 +33,7 @@ const mission = () => {
                             </p>
 
                             <div className="read-more-btn mt--50">
-                                <Link className="btn-default btn-icon" to="#">Learn More <i className="icon"><FiArrowRight /></i></Link>
+                                <Link className="btn-default btn-icon" to="/consult">Learn More <i className="icon"><FiArrowRight /></i></Link>
                             </div>
                         </div>
                     </div>

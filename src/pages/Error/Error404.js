@@ -9,7 +9,7 @@ const Error404 = () => {
         <>
             <SEO title="Consult | Wigho Digital Solutions"/>
             <main className="page-wrapper">
-                <HeaderOne btnStyle="btn-small btn-icon round" HeaderSTyle="" />
+                <HeaderOne btnStyle="btn-small btn-icon round" HeaderSTyle="header-transparent" />
 
                 <div className="error-area ptb--200 ptb_sm--60 ptb_md--80">
                     <div className="container">

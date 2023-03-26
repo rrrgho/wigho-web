@@ -29,7 +29,7 @@ const HeaderOne = ({btnStyle, HeaderSTyle}) => {
                     <div className="row align-items-center row--0">
                         <div className="col-lg-3 col-md-6 col-4">
                             <Logo
-                                image={`${process.env.PUBLIC_URL}/images/app/wigho-horizontal-dark-nocanvas.png`}
+                                image={`${process.env.PUBLIC_URL}/images/app/wigho-horizontal-light-nocanvas.png`}
                                 image2={`${process.env.PUBLIC_URL}/images/app/wigho-horizontal-light-nocanvas.png`}
                             />
                         </div>

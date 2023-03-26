@@ -19,7 +19,7 @@ const LandingPage = () => {
         <>
             <SEO title="Consult | Wigho Digital Solutions"/>
             <main className="page-wrapper">
-                <HeaderOne btnStyle="btn-small btn-icon round" HeaderSTyle="" />
+                <HeaderOne btnStyle="btn-small btn-icon round" HeaderSTyle="header-transparent" />
 
                 {/* Start Slider Area  */}
                 <div className="slider-area slider-style-1 bg-transparent height-750">
