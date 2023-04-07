@@ -16,7 +16,9 @@ import Mission from "../../elements/about/Mission";
 import BrandThree from "../../elements/brand/BrandThree";
 import TimelineOne from "../../elements/timeline/TimelineOne";
 import PricingTwo from "../../elements/pricing/PricingTwo";
-import ImageBanner from '../../assets/images/service-2.png'
+import TeamTwo from "../../elements/team/TeamTwo";
+
+import { headTeam as Team } from '../../data/team/team'
 
 var BlogListData = BlogClassicData.slice(0, 3);
 
@@ -109,6 +111,26 @@ const Home = () => {
                     </div>
                     {/* End About Area  */}
 
+                    {/*<Separator />*/}
+                    {/*/!* Start Elements Area  *!/*/}
+                    {/*<div className="rwt-team-area rn-section-gap">*/}
+                    {/*    <div className="container">*/}
+                    {/*        <div className="row">*/}
+                    {/*            <div className="col-lg-12">*/}
+                    {/*                <SectionTitle*/}
+                    {/*                    textAlign = "text-center"*/}
+                    {/*                    radiusRounded = ""*/}
+                    {/*                    subtitle = "Our Experts."*/}
+                    {/*                    title = "Our Company Experts."*/}
+                    {/*                    description = "We provide company and finance service for <br /> startups and company business."*/}
+                    {/*                />*/}
+                    {/*            </div>*/}
+                    {/*        </div>*/}
+                    {/*        <TeamTwo data={Team} column="col-lg-4 col-md-6 col-12" teamStyle="style-two" />*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
+                    {/* End Elements Area  */}
+
 
                     <Separator />
                     {/* Start Service Area  */}
@@ -193,7 +215,7 @@ const Home = () => {
                                         radiusRounded = ""
                                         subtitle = "Our Reliable Programmers Joining Big Tech Company"
                                         title = "Where Our Team Member Work For"
-                                        description = ""
+                                        description = "Experiencing good culture of work at Big Tech Company makes <br/> our team better in handling variety of project"
                                     />
                                 </div>
                             </div>
@@ -220,9 +242,9 @@ const Home = () => {
                                     <SectionTitle
                                         textAlign = "text-center"
                                         radiusRounded = ""
-                                        subtitle = "Toppings For Your Coffee"
-                                        title = "Stunning Website Package"
-                                        description = ""
+                                        subtitle = "Stunning Website Package"
+                                        title = "Sweet Appetizer for You"
+                                        description = "Stunning landing page for your company profile looks better, <br /> we're not joking that these prices give everything you need"
                                     />
                                 </div>
                             </div>

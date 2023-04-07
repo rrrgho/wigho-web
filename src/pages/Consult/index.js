@@ -38,8 +38,8 @@ const Consult = () => {
                                     </h1>
                                     <p className="description">We help our clients succeed by creating brand identities, digital experiences, and print materials.</p>
                                     <div className="button-group">
-                                        <Link className="btn-default btn-medium btn-border round btn-icon" to="#">Whatsapp <i className="icon"><FaWhatsapp /></i></Link>
-                                        <Link className="btn-default btn-medium btn-border round btn-icon" to="#">Email Us <i className="icon"><FiMail /></i></Link>
+                                        <a className="btn-default btn-medium btn-border round btn-icon" target="_blank" href="https://wa.me/+6285186897566/?text=Hi,%20I%20Want%20to%20Consult%20with%20WighoDigital%20Support%20Team">Whatsapp <i className="icon"><FaWhatsapp /></i></a>
+                                        {/*<a className="btn-default btn-medium btn-border round btn-icon" href="#">Email Us <i className="icon"><FiMail /></i></a>*/}
                                     </div>
                                 </div>
                             </div>

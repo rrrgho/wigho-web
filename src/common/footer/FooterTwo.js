@@ -40,7 +40,7 @@ const FooterTwo = () => {
                             <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div className="rn-footer-widget">
                                     <h4 className="title">{footerIntemTwo.title}</h4>
-                                    <h6 className="subtitle">{footerIntemTwo.support1} <br/> {footerIntemTwo.support2}</h6>
+                                    <h6 className="subtitle">{footerIntemTwo.support1} <br/> {footerIntemTwo.support2} <br/> {footerIntemTwo.support3}</h6>
                                 </div>
                             </div>
                             {/* End Single Widget  */}

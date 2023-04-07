@@ -21,7 +21,7 @@ const TeamTwo = ({data, column , teamStyle, justify}) => {
                                 </figure>
                                 <figcaption className="content">
                                     <h2 className="title">{data.name}</h2>
-                                    <h6 className="theme-gradient">{data.designation}</h6>
+                                    <h6 className="theme-gradient" style={{fontSize:30}}>{data.designation}</h6>
                                     {/*{data.location &&*/}
                                     {/*    <span className="team-form">*/}
                                     {/*    <img src="./images/team/location.svg" alt="Corporate React Template" />*/}

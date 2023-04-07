@@ -15,7 +15,7 @@ const PricingTwo = () => {
                             <div className="pricing">
                                 <div className="price-wrapper">
                                     <span className="currency">IDR</span>
-                                    <span className="price">1,99K</span>
+                                    <span className="price">1,99jt</span>
                                 </div>
                                 <span className="subtitle">Exclude Monthly Maintenance</span>
                             </div>
@@ -47,7 +47,7 @@ const PricingTwo = () => {
                             <div className="pricing">
                                 <div className="price-wrapper">
                                     <span className="currency">IDR</span>
-                                    <span className="price">4,99K</span>
+                                    <span className="price">4,99jt</span>
                                 </div>
                                 <span className="subtitle">Exclude Monthly Maintenance</span>
                             </div>
@@ -79,7 +79,7 @@ const PricingTwo = () => {
                             <div className="pricing">
                                 <div className="price-wrapper">
                                     <span className="currency">IDR</span>
-                                    <span className="price">7,99K</span>
+                                    <span className="price">7,99jt</span>
                                 </div>
                                 <span className="subtitle">Exclude Monthly Maintenance</span>
                             </div>

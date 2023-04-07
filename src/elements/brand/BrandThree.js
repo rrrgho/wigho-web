@@ -2,6 +2,7 @@ import React from 'react';
 import ImageTelkomsel from '../../assets/images/Telkomsel.png'
 import ImageAstra from '../../assets/images/Astra.png'
 import ImageMBI from '../../assets/images/MBI.png'
+import ImageAdira from '../../assets/images/Adira.png'
 
 const BrandList = [
     {
@@ -12,6 +13,9 @@ const BrandList = [
     },
     {
         image: ImageMBI
+    },
+    {
+        image: ImageAdira
     },
 
 ]

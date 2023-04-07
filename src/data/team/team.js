@@ -48,28 +48,28 @@ const headTeam = [
         ]
 
     },
-    {
-        image: RianImage,
-        name: 'Lisia Lim, S.M',
-        designation: 'Growth Manager',
-        location: 'Poland',
-        description: 'Yes, I am a product designer. I have a passion for product design.',
-        socialNetwork: [
-            {
-                icon: <FiFacebook />,
-                url: '#'
-            },
-            {
-                icon: <FiTwitter />,
-                url: '#'
-            },
-            {
-                icon: <FiInstagram />,
-                url: '#'
-            },
-        ]
-
-    }
+    // {
+    //     image: RianImage,
+    //     name: 'Lisia Lim, S.M',
+    //     designation: 'Growth Manager',
+    //     location: 'Poland',
+    //     description: 'Yes, I am a product designer. I have a passion for product design.',
+    //     socialNetwork: [
+    //         {
+    //             icon: <FiFacebook />,
+    //             url: '#'
+    //         },
+    //         {
+    //             icon: <FiTwitter />,
+    //             url: '#'
+    //         },
+    //         {
+    //             icon: <FiInstagram />,
+    //             url: '#'
+    //         },
+    //     ]
+    //
+    // }
 ]
 
 const developerTeam = [
