@@ -40,7 +40,7 @@ const PricingTwo = () => {
 
             {/* Start PRicing Table Area  */}
             <div className="col-lg-4 col-md-6 col-12">
-                <div className="rn-pricing style-2 active">
+                <div className="rn-pricing style-2 active zoom-in-out-effect">
                     <div className="pricing-table-inner">
                         <div className="pricing-header">
                             <h4 className="title">Starter Plan</h4>

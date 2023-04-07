@@ -6,7 +6,7 @@ const Nav = () => {
         <ul className="mainmenu">
             <li><a href="/">Home</a></li>
 
-            <li className="has-droupdown"><Link to="#">Our Products</Link>
+            <li className="has-droupdown"><a href="#">Our Products</a>
                 <ul className="submenu">
                     <li><Link to="/product/software-development">Software Development</Link></li>
                     <li><Link to="/product/landing-page">Landing Page</Link></li>

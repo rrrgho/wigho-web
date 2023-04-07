@@ -76,18 +76,18 @@
 }
 
 .display-one {
-    font-size: 75px;
+    font-size: 65px;
     @media #{$lg-layout} {
-        font-size: 70px;
+        font-size: 60px;
     }
     @media #{$md-layout} {
-        font-size: 65px;
+        font-size: 55px;
     }
     @media #{$sm-layout} {
         font-size: 50px;
     }
     @media #{$large-mobile} {
-        font-size: 46px;
+        font-size: 50px;
     }
 }
 
@@ -199,6 +199,54 @@
     Slider Style One
 -------------------------*/
 
+
+
+.zoom-in-out-effect {
+    animation: zoom-in-out-effect 2s ease infinite;
+}
+
+@keyframes zoom-in-out-effect {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    -moz-animation: bounce 2s infinite;
+    -o-animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+    40% {-webkit-transform: translateY(-10px);}
+    60% {-webkit-transform: translateY(-3px);}
+}
+
+@-moz-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+    40% {-moz-transform: translateY(-10px);}
+    60% {-moz-transform: translateY(-3px);}
+}
+
+@-o-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+    40% {-o-transform: translateY(-10px);}
+    60% {-o-transform: translateY(-3px);}
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-10px);}
+    60% {transform: translateY(-3px);}
+}
+
 .slider-style-1 {
     .inner {
         .subtitle {
@@ -240,7 +288,7 @@
 
         .description {
             font-family: var(--font-primary);
-            padding: 0 22%;
+            padding: 0 0.2%;
             font-size: 25px;
             line-height: 1.7;
             margin-bottom: 40px;

@@ -16,11 +16,7 @@ import Mission from "../../elements/about/Mission";
 import BrandThree from "../../elements/brand/BrandThree";
 import TimelineOne from "../../elements/timeline/TimelineOne";
 import PricingTwo from "../../elements/pricing/PricingTwo";
-import TeamTwo from "../../elements/team/TeamTwo";
-
-import { headTeam as Team } from '../../data/team/team'
-
-var BlogListData = BlogClassicData.slice(0, 3);
+import BannerImage from '../../assets/images/banner-min.png'
 
 const BannerData = [
     {
@@ -39,27 +35,27 @@ const Home = () => {
                 <HeaderOne btnStyle="btn-small btn-icon round" HeaderSTyle="header-transparent" />
 
                 {/* Start Slider Area  */}
-                <Slider className="slider-area slider-style-4 variation-2 slider-dot rn-slick-dot rn-slick-arrow" {...BannerActivation}>
-                    {BannerData.map((data, index) => (
-                        <div key={index} className="single-slide">
-                            <div className="height-950 bg-overlay bg_image" style={{backgroundImage: `url(${process.env.PUBLIC_URL} ${data.image})`}}>
-                                <div className="container">
-                                    <div className="row row--30 align-items-center">
-                                        <div className="col-lg-12">
-                                            <div className="inner text-center">
-                                                <h1 className="title" dangerouslySetInnerHTML={{__html: data.title}}></h1>
-                                                <p className="description" dangerouslySetInnerHTML={{__html: data.description}}></p>
-                                                <div className="button-group mt--30">
-                                                    <Link className="btn-default btn-large round" to="/consult">Get started now</Link>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </Slider>
+                {/*<Slider className="slider-area slider-style-4 variation-2 slider-dot rn-slick-dot rn-slick-arrow" {...BannerActivation}>*/}
+                {/*    {BannerData.map((data, index) => (*/}
+                {/*        <div key={index} className="single-slide">*/}
+                {/*            <div className="height-950 bg-overlay bg_image" style={{backgroundImage: `url(${process.env.PUBLIC_URL} ${data.image})`}}>*/}
+                {/*                <div className="container">*/}
+                {/*                    <div className="row row--30 align-items-center">*/}
+                {/*                        <div className="col-lg-12">*/}
+                {/*                            <div className="inner text-center">*/}
+                {/*                                <h1 className="title" dangerouslySetInnerHTML={{__html: data.title}}></h1>*/}
+                {/*                                <p className="description" dangerouslySetInnerHTML={{__html: data.description}}></p>*/}
+                {/*                                <div className="button-group mt--30">*/}
+                {/*                                    <Link className="btn-default btn-large round" to="/consult">Get started now</Link>*/}
+                {/*                                </div>*/}
+                {/*                            </div>*/}
+                {/*                        </div>*/}
+                {/*                    </div>*/}
+                {/*                </div>*/}
+                {/*            </div>*/}
+                {/*        </div>*/}
+                {/*    ))}*/}
+                {/*</Slider>*/}
                 {/* End Slider Area  */}
 
 
@@ -68,10 +64,10 @@ const Home = () => {
                     <div className="slider-area slider-style-1 bg-transparent height-850">
                         <div className="container">
                             <div className="row">
-                                <div className="col-lg-12">
-                                    <div className="inner text-center">
-                                        <span className="subtitle">DIGITAL CONSULTING AGENCY</span>
-                                        <h1 className="title theme-gradient display-two d-none d-md-block">One Stop IT Solution <br /> {" "}
+                                <div className="col-12 col-lg-8">
+                                    <div className="inner text-center text-lg-start">
+                                        <span className="subtitle">WIGHO DIGITAL SOLUTIONS</span>
+                                        <h1 className="title theme-gradient display-one d-none d-md-block">One Stop IT Solution <br /> {" "}
                                             <Typed
                                                 strings={[
                                                     "Consulting.",
@@ -99,12 +95,17 @@ const Home = () => {
                                                 loop
                                             />
                                         </h2>
-                                        <p className="description">We specialize in providing innovative and customized solutions to businesses seeking to leverage technology to achieve their strategic goals.</p>
+                                        <p className="description">We specialize in providing innovative <br/> and customized solutions to businesses seeking <br/> to leverage technology to achieve their strategic goals.</p>
                                         <div className="button-group">
-                                            <Link className="btn-default btn-medium round btn-icon" to="/consult">Schedule an Appointment <i className="icon"><FiArrowRight /></i></Link>
+                                            <Link className="btn-default bounce btn-medium round btn-icon" to="/consult">Schedule an Appointment <i className="icon"><FiArrowRight /></i></Link>
                                             {/*<Link className="btn-default btn-medium btn-border round btn-icon" to="#">Contact Us <i className="icon"><FiArrowRight /></i></Link>*/}
                                         </div>
                                     </div>
+                                </div>
+                                <div className="col-12 col-lg-4">
+                                    <a href="https://www.freepik.com/free-vector/hand-drawn-flat-design-api-illustration_25001216.htm#query=programming%20flat%20design&position=36&from_view=search&track=ais">
+                                        <img className="zoom-in-out-effect" src={BannerImage} alt="https://www.freepik.com/free-vector/hand-drawn-flat-design-api-illustration_25001216.htm#query=programming%20flat%20design&position=36&from_view=search&track=ais" />
+                                    </a>
                                 </div>
                             </div>
                         </div>
